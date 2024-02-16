@@ -1,0 +1,6 @@
+Q2 : 
+On peut indiquer des machines et des groupes dans un groupe.
+
+Q3 : 
+Les machines ne doivent pas obligatoirement être mises dans un groupe, on peut juste les cibler individuellement pour une tâche.
+Cepednant, même si une machine n'est pas explicitement indiqué dans un groupe, elle fait quand même partie du groupe all
