@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
 	config.vm.provider "virtualbox" do |vb|
 		vb.gui = true
 		vb.memory = "2048"
-		vb.cpu = 2
+		vb.cpus = 2
 	end
 end
 
@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
 	
 	config.vm.provider "virtualbox" do |vb|
 		vb.memory = "1024"
-		vb.cpu = 1
+		vb.cpus = 1
 	end
 end
 
@@ -32,6 +32,6 @@ Vagrant.configure("2") do |config|
 	config.vm.provider "virtualbox" do |vb|
 		vb.gui = true
 		vb.memory = "1024"
-		vb.cpu = 1
+		vb.cpus = 1
 	end
 end
