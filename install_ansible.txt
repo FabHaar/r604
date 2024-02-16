@@ -1,0 +1,8 @@
+Q1: 
+version de ansible : 2.12.10
+
+Q2:
+private_key_file = /etc/keys-ansible/ansible_rsa : indique le chemin de la clé SSH privée
+host_key_checking = false : desactive la verification de clé par l'hôte
+remote_user = ansible : spécifie le nom d'utilisateur distant
+deprecation_warnings=False : desactive des warnings pouvant gener 
