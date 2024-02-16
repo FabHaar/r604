@@ -3,7 +3,7 @@
 
 #ansible
 Vagrant.configure("2") do |config|
-	config.vm.define "machine1" do |ansible|
+	config.vm.define "ansible" do |ansible|
 		config.vm.box = "generic/ubuntu2004"
   
 		config.vm.provider "virtualbox" do |vb|
@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
 	end
 
 #client1
-	config.vm.define "machine1" do |client1|
+	config.vm.define "client1" do |client1|
 		config.vm.hostname = "client1"
 		config.vm.box = "generic/ubuntu2004"
 	
@@ -24,7 +24,7 @@ Vagrant.configure("2") do |config|
 	end
 
 #client2
-	config.vm.define "machine1" do |client2|
+	config.vm.define "client2" do |client2|
 		config.vm.hostname = "client2"
 		config.vm.box = "generic/ubuntu2004"
 	
