@@ -7,7 +7,6 @@ Vagrant.configure("2") do |config|
 	config.vm.box = "generic/ubuntu2004"
   
 	config.vm.provider "virtualbox" do |vb|
-		vb.gui = true
 		vb.memory = "2048"
 		vb.cpus = 2
 	end
@@ -24,13 +23,12 @@ Vagrant.configure("2") do |config|
 	end
 end
 
-#client1
+#client2
 Vagrant.configure("2") do |config|
 	config.vm.hostname = "client2"
 	config.vm.box = "generic/ubuntu2004"
 	
 	config.vm.provider "virtualbox" do |vb|
-		vb.gui = true
 		vb.memory = "1024"
 		vb.cpus = 1
 	end
