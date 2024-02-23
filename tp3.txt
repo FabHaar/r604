@@ -1,0 +1,15 @@
+Playbook 1 :
+Q2 :
+become: true indique que les tâches sont à effectuer en tant que superutilisateur
+
+Q3 :
+enbaled :yes signifie que le service sera activé une fois téléchargé
+
+Q4 :
+le commande ansible-playbook playbook1.yaml est idempotente à partir du deuxième lancement
+
+Playbook 2 : 
+
+Q4 : 
+
+Le playbook est idempotente

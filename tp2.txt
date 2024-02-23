@@ -23,7 +23,7 @@ sl affiche un train qui fait tchou tchou
 
 Q5
 
-
+ansible client2 -m command -a "uptime"
 
 Q6
 

@@ -1,0 +1,10 @@
+[linux:children]
+servers_linux
+clients_linux
+
+[servers_linux]
+ansible
+
+[clients_linux]
+client1
+client2
