@@ -4,3 +4,28 @@ On peut indiquer des machines et des groupes dans un groupe.
 Q3 : 
 Les machines ne doivent pas obligatoirement être mises dans un groupe, on peut juste les cibler individuellement pour une tâche.
 Cepednant, même si une machine n'est pas explicitement indiqué dans un groupe, elle fait quand même partie du groupe all
+
+Commandes had hoc
+
+Q1
+la commande ansible client1 -m file -a "path=/tmp/file.txt state=touch" est idempotente
+
+Q3
+la commande ansible client1 -m copy -a "src=/home/ansible/files/OriginalFile.txt dest=/tmp/test.txt" est idempotente
+
+Q4
+
+ansible client1 -m apt -a "name=sl state=latest update_cache=yes" ne fonctionne pas car pas les droits pour apt
+l'option -b permet de lancer des commandes avec les droits de superuilisateur à distaacne s'ils sont diponibles.
+ansible client1 -m apt -a "name=sl state=present update_cache=yes" -b est idempotente mais à partir du deuxième lancement
+
+sl affiche un train qui fait tchou tchou
+
+Q5
+
+
+
+Q6
+
+j'ai fait la commande : ansible client2 -m command -a "ls /tmp" -o
+elle est idempotente
