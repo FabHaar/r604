@@ -12,4 +12,4 @@ Playbook 2 :
 
 Q4 : 
 
-Le playbook est idempotente
+Le playbook est idempotente à partir du deuxieme lancement
