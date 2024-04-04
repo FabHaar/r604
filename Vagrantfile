@@ -14,6 +14,7 @@ Vagrant.configure("2") do |config|
 			vb.cpus = 2
 		end
 		ansible.vm.network "private_network", type: "static", ip: "192.168.56.10"
+		config.vm.provision "shell", path: "script/install_ansible.sh"
 	end
 
 #client1
