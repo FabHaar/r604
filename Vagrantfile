@@ -15,6 +15,7 @@ Vagrant.configure("2") do |config|
 		end
 		ansible.vm.network "private_network", type: "static", ip: "192.168.56.10"
 		config.vm.provision "shell", path: "script/install_ansible.sh"
+		config.vm.provision "shell", path: "script/install_ssh.sh"
 	end
 
 #client1
@@ -29,6 +30,7 @@ Vagrant.configure("2") do |config|
 			vb.cpus = 1
 		end
 		client1.vm.network "private_network", type: "static", ip: "192.168.56.11"
+		config.vm.provision "shell", path: "script/install_ssh.sh"
 	end
 
 #client2
@@ -43,5 +45,6 @@ Vagrant.configure("2") do |config|
 			vb.cpus = 1
 		end
 		client2.vm.network "private_network", type: "static", ip: "192.168.56.12"
+		config.vm.provision "shell", path: "script/install_ssh.sh"
 	end
 end
