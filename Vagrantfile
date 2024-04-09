@@ -31,6 +31,8 @@ Vagrant.configure("2") do |config|
 		end
 		client1.vm.network "private_network", type: "static", ip: "192.168.56.11"
 		config.vm.provision "shell", path: "script/install_ssh.sh"
+		config.vm.provision "shell", path: "script/create_ansible.sh"
+
 	end
 
 #client2
@@ -46,5 +48,6 @@ Vagrant.configure("2") do |config|
 		end
 		client2.vm.network "private_network", type: "static", ip: "192.168.56.12"
 		config.vm.provision "shell", path: "script/install_ssh.sh"
+		config.vm.provision "shell", path: "script/create_ansible.sh"
 	end
 end
